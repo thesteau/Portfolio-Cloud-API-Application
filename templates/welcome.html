@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>Please log in. If you are not registered, your details below will register you.</p>
+    <p>Passwords must be at least 8 characters.</p>
+
+    <form method="post">
+
+    <!--
+    * A "Welcome" page on which the user can provide an email address and a password. You need to register them at Auth0 under your Auth0 domain
+    * After the account is created, the "User Info" page displays a JWT issued by Auth0 for this user
+    * If the user has already created an account, when they enter the email address and the password on the "Welcome" page, it will display the "User Info" page with a new JWT issued by Auth0 for this user
+    -->
+
+        <div class="container">
+            <label>Email: </label>
+            <input type="email" placeholder="Email" name="email" required>
+            <label>Password: </label>
+            <input type="password" placeholder="Password" name="password" minlength="8" required>
+            <button type="submit" name="button" value="login">Login</button>
+            <button type="submit" name="button" value="register">Register</button>
+        </div>
+    </form>
+
+</body>
+</html>
