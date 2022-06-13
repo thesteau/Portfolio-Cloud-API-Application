@@ -1,6 +1,5 @@
 # Steven Au
-# CS 493
-# Final Project
+
 from flask import Flask, jsonify
 from src import load, boats, auth, users, welcome
 
